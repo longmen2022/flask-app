@@ -53,10 +53,10 @@ jobs:
         run: |
           docker build . -t lmen776/demo-app:${{ env.VERSION }} 
       
-    #   # Push the Docker Image
-    #   - name: Push Docker Image
-    #     run: |
-    #       docker push lmen776/demo-app:${{ env.VERSION }}
+      # Push the Docker Image
+      - name: Push Docker Image
+        run: |
+          docker push lmen776/demo-app:${{ env.VERSION }}
       
       # # UPdate the K8s Manifest Files
       # - name: Update K8s Manifests
